@@ -22,6 +22,7 @@ function toggleDarkness(opacity) {
         overlay.style.width = '100%';
         overlay.style.height = '100%';
         overlay.style.zIndex = 999999;
+        overlay.style.pointerEvents = 'none';
         document.body.appendChild(overlay);
     } 
     overlay.style.backgroundColor = 'rgba(0, 0, 0, ' + opacity + ')';
