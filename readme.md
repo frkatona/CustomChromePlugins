@@ -22,10 +22,10 @@ it turns out chrome extensions are basically just web pages with a manifest.json
 
 ### TODO
 
-- [ ] add a slider to control the brightness over a range of css opacity values
-
 - [ ] fancify the button/slider
 
 - [ ] maybe try a full-fledged dark-mode plugin, inverting colors where the page background is above a certain brightness (versions I 've tried tend to make some pages unreadable)
+
+- [x] add a slider to control the brightness over a range of css opacity values
 
 - [x] add a button to toggle the overlay on/off
