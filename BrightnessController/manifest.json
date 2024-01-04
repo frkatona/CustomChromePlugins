@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Darken Screen",
+    "version": "1.0",
+    "description": "A simple Chrome plugin to darken the screen with opacity control.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["popup.js", "content.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "popup.html",
+        "styles.css",
+        "popup.js",
+        "content.js"
+    ]
+}
